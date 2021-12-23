@@ -1,0 +1,40 @@
+@font-face {font-family: Earwig Factory; src:url('earwig factory rg.ttf');}
+
+
+html {
+    background: url(https://thumbs.gfycat.com/HarmoniousImpracticalBrant-max-1mb.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+
+body {
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background;
+}
+
+
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
