@@ -28,8 +28,7 @@
   <meta property="og:title" content="Settings 2
 — SpinShare OBS Setup">
   <meta property="og:description" content="">
-  <meta property="og:image"
-    content="../images/NVIDIA_Share_W0bxYOj5Iq.png">
+  <meta property="og:image" content="../images/NVIDIA_Share_W0bxYOj5Iq.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
@@ -37,8 +36,7 @@
   <meta property="twitter:title" content="Settings 2
 — SpinShare OBS Setup">
   <meta property="twitter:description" content="">
-  <meta property="twitter:image"
-    content="../images/NVIDIA_Share_W0bxYOj5Iq.png">
+  <meta property="twitter:image" content="../images/NVIDIA_Share_W0bxYOj5Iq.png">
 
 </head>
 
@@ -230,7 +228,8 @@
               </div>
               <div class="content">
                 <p>
-                  Make sure to set <code class="code">Max B-Frames</code> to <code class="code">0</code>
+                  Make sure to set <code class="code">Max B-Frames</code> to <code class="code">0</code> & set <code
+                    class="code">Bitrate</code> to <code class="code">2500 Kbps</code> or lower.
                 </p>
               </div>
             </div>
@@ -283,9 +282,17 @@
             </div>
             <div class="card p-0">
               <img src="../images/mstsc_9zop7bl9bA.png" class="img-fluid rounded-top col" alt="">
+
+              <div class="alert alert-danger card" role="alert">
+                <h1 class="alert-heading text-center">
+                  IMPORTANT!
+                </h1>
+              </div>
               <div class="content">
                 <p>
-                  Put <code class="code">bframes=0 threads=8</code> in the <code class="code">x264 Options</code>.
+                  Put <code class="code">bframes=0 threads=8</code> in the <code class="code">x264 Options</code> and
+                  set the
+                  <code class="code">Bitrate</code> to <code class="code">2500 Kbps</code> or lower.
                 </p>
               </div>
             </div>
@@ -387,16 +394,12 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-6">
-
             <div class="alert alert-success card" role="alert">
               <h1 class="alert-heading">
                 You're done!
               </h1>
               With this part, ya gotta go to <a href="../step4">Getting SRXD in OBS</a> to finish the setup!
             </div>
-
           </div>
         </div>
 
