@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body,
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+main {
+    width: 100vw;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+main section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#landing {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#previous {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#previous .item {
+    grid-row: 2;
+}
+
+#previous .down {
+    grid-column: 3;
+}
+
+#previous .up {
+    grid-column: 3;
+}
+
+.container {
+    width: 100%;
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#upcoming {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#upcoming .up {
+    grid-column: 3;
+}
+
+#upcoming .down {
+    grid-column: 3;
+}
+
+#contact .up {
+    grid-column: 3;
+}
+
+#contact .down {
+    grid-column: 3;
+}
+
+#upcoming .container .item {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#contact .container .item {
+    grid-column: 2;
+    width: 120%;
+    height: 100%;
+}
+
+.item:hover {
+    height: 120%;
+}
+
+#contact .container .item:hover {
+    height: 120%;
+}
+
+#work .up {
+    grid-column: 3;
+}
+
+#work .down {
+    grid-column: 3;
+}
+
+#work {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#spinshare {
+    background-image: url("spinshare.d69c50d4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#project1 {
+    background-image: url("project1.f145a282.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#scrumboomer {
+    background-image: url("ScrumBoomer.0255d5c0.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#mapbot {
+    background-image: url("mapbot.f8403e67.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#sssospinpanel {
+    background-image: url("sssopanel.9fc71b5b.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#obsguide {
+    background-image: url("obsguide.93079341.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#fuckyoutoo {
+    background-image: url("fuckyoutoo.c69a2740.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#playmore {
+    background-image: url("playmore.310000df.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#barelyvisible {
+    background-image: url("barelyvisible.ceda5a00.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#itemtext {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+#placeholder {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#contact .container {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+em {
+    color: white;
+}
+
+#logo {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#landing .up {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#landing .down {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.item {
+    background-color: rgba(0, 0, 0, 0.356);
+    display: grid;
+    font-size: 1.5rem;
+    height: 20vh;
+    width: 25vw;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-style: italic;
+    color: #fff
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
