@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    overflow-y: none;
+    scrollbar-width: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url(../img/background.svg);
+    background-size: 1250vh;
+    /* background-size: 175%; */
+    background-repeat: no-repeat;
+    background-color: black;
+    animation: fadein 1s;
+    flex-direction: row;
+    height: 100%;
+}
+
+header {
+    width: auto;
+    height: 100vh;
+}
+
+header img {
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    height: 25%;
+}
+
+nav {
+    transform: rotate(-26.2405deg);
+    top: 25%;
+    left: 30%;
+    height: 0%;
+    width: 60%;
+    font-size: 1.75rem;
+    position: absolute;
+    color: white;
+}
+
+header nav a {
+    padding: 2px;
+    transition: padding 2s;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav a:hover {
+    transition: color 2s;
+    transition: padding 0.5s;
+    padding: 30px;
+    animation: inverted 0.25s forwards;
+}
+
+main {
+    background-color: transparent;
+    position: absolute;
+    left: 137.63%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    width: 100vw;
+}
+
+main section a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* filter: invert(1);
+    mix-blend-mode: difference;
+    color: black; */
+    font-size: 200%;
+}
+
+main section a {
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 500%;
+    text-transform: uppercase;
+    font-weight: 1200;
+    color: white;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+main section a:hover {
+    transition: filter 1s;
+    transition: color;
+    filter: invert(1);
+    mix-blend-mode: difference;
+    color: black;
+}
+
+main div {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+
+form {
+    width: 50%;
+    text-align: center;
+}
+
+input[type=text],
+select,
+input[type=email],
+textarea {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: gray;
+}
+
+input[type=submit] {
+    width: 60%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+input[type=submit]:hover {
+    color: black;
+    background-color: white;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+section div a {
+    font-size: medium;
+    margin-left: 10%;
+}
+
+#mail {
+    height: 300%;
+}
+
+.h {
+    width: 50%;
+}
+
+#s1i {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 33.209%;
+    left: 13%;
+    animation: fadein 5s;
+    transition: filter 1s;
+}
+
+#s1i:hover {
+    filter: invert(1);
+
+}
+
+footer {
+    width: 3%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 645%;
+    background-color: #023047;
+}
+
+footer p {
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    height: 41px;
+    left: -224px;
+    position: relative;
+    width: 495px;
+    top: 420px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #023047;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #023047;
+}
+
+ol {
+    list-style-type: upper-roman;
+    font-size: 200%;
+    margin-left: 50px;
+}
+
+#ctinfo {
+    position: absolute;
+    top: 0%;
+    left: 89%;
+    font-size: 225%;
+}
+
+#vids {
+    position: absolute;
+    top: 15%;
+    left: 22.5%;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/* Animations ----------------------------------------------------------------------------- */
+
+@keyframes inverted {
+    from {
+        filter: none;
+    }
+
+    to {
+        filter: invert(100%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

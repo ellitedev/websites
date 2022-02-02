@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 508 285.75"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="background.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="true"
+     inkscape:zoom="1.4322917"
+     inkscape:cx="699.22909"
+     inkscape:cy="1200.5236"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5">
+    <inkscape:grid
+       type="xygrid"
+       id="grid31897" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="480"
+       y="1170"
+       width="200"
+       height="90"
+       id="rect1013" />
+    <rect
+       x="994.043"
+       y="620.07351"
+       width="141.19508"
+       height="76.274966"
+       id="rect29129" />
+    <rect
+       x="988.36557"
+       y="621.06089"
+       width="627.97253"
+       height="305.09986"
+       id="rect13119" />
+  </defs>
+  <g
+     id="layer1">
+    <path
+       style="fill:#0072b2;fill-opacity:1;stroke:#0072b2;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 111.125,0 193.675,167.74583 534.45833,0 Z"
+       id="path5372" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 251.35416,285.75 C 111.125,0 111.125,0 111.125,0 H 0 v 285.75 z"
+       id="path15008" />
+    <path
+       style="fill:#e54875;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 251.35416,285.75 C 246.0625,275.16666 246.0625,275.16666 246.0625,275.16666 L 804.33332,0 v 285.75 z"
+       id="path15175" />
+  </g>
+  <g
+     id="layer2" />
+  <path
+     style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 193.675,167.74583 246.06249,275.16666 804.33331,5e-6 H 534.45832 L 193.675,167.74583"
+     id="path1031" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Tempus Sans ITC';-inkscape-font-specification:'Tempus Sans ITC Bold';stroke-width:0.264583"
+     x="148.16667"
+     y="444.5"
+     id="text45641"><tspan
+       sodipodi:role="line"
+       id="tspan45639"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Tempus Sans ITC';-inkscape-font-specification:'Tempus Sans ITC Bold';stroke-width:0.264583"
+       x="148.16667"
+       y="444.5" /></text>
+  <text
+     xml:space="preserve"
+     transform="scale(0.26458333)"
+     id="text1011"
+     style="line-height:1.25;font-family:Raleway;font-size:40px;-inkscape-font-specification:'Raleway Ultra-Bold';font-weight:800;white-space:pre;shape-inside:url(#rect1013)"><tspan
+       sodipodi:role="line"
+       id="tspan1015"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Rockwell Condensed';-inkscape-font-specification:'Rockwell Condensed,  Bold';stroke-width:0.264583"
+     x="111.125"
+     y="301.625"
+     id="text41625"><tspan
+       sodipodi:role="line"
+       id="tspan41623"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Rockwell Condensed';-inkscape-font-specification:'Rockwell Condensed,  Bold';stroke-width:0.264583"
+       x="111.125"
+       y="301.625">BOR</tspan></text>
+</svg>
