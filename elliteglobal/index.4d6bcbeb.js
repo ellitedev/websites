@@ -597,7 +597,7 @@ function animate() {
 }
 animate();
 
-},{"three":"ktPTu","three/examples/jsm/loaders/OBJLoader.js":"htIhD","url:./album.obj":"9xRPP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","url:./file.obj":"5BnLG"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","three/examples/jsm/loaders/OBJLoader.js":"htIhD","url:./album.obj":"9xRPP","url:./file.obj":"5BnLG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ktPTu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ACESFilmicToneMapping", ()=>ACESFilmicToneMapping

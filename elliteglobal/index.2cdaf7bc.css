@@ -5,9 +5,188 @@
     border: 0;
 }
 
+
+/* width */
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+
+/* Handle */
+
+
+::-webkit-scrollbar-thumb {
+    background: #424242;
+}
+
+
+/* Handle on hover */
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* The side naigation menu */
+
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.527);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+
+.sidenav a {
+    padding: 4px 8px 0px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #424242;
+    display: block;
+    transition: 0.3s;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    ;
+}
+
+
+.sidenav h1 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #727272;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    ;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+
+.sidenav a:hover {
+    color: white;
+    letter-spacing: .1em;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+.opennav {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    height: 2em;
+    width: 2em;
+    color: #424242;
+    transition: 0.2s;
+}
+
+
+#opennnav {
+    font-size: 1.2em;
+}
+
+
+.opennav:hover {
+    color: white;
+    height: 2.3em;
+    width: 2.3em;
+}
+
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
+
 
 canvas {
     position: fixed;
@@ -15,12 +194,6 @@ canvas {
     left: 0;
 }
 
-body,
-html {
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-}
 
 main {
     width: 100vw;
@@ -28,16 +201,14 @@ main {
     position: absolute;
     width: 100%;
     overflow-x: hidden;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
 }
+
 
 main section {
     width: 100vw;
     height: 100vh;
-    scroll-snap-align: start;
 }
+
 
 #landing {
     display: grid;
@@ -47,25 +218,49 @@ main section {
     align-items: center;
 }
 
+
 #previous {
     display: grid;
-    grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 3fr 7fr 3fr;
     justify-items: center;
     align-items: center;
 }
 
-#previous .item {
-    grid-row: 2;
-}
 
 #previous .down {
-    grid-column: 3;
+    grid-column: 2;
 }
 
+
 #previous .up {
-    grid-column: 3;
+    grid-column: 2;
 }
+
+
+.up,
+.down {
+    transition: all 0.1s ease-in-out;
+}
+
+
+.down:hover {
+    padding-top: 1em;
+}
+
+
+.up:hover {
+    padding-bottom: 1em;
+}
+
+
+#previous .container {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
 
 .container {
     width: 100%;
@@ -78,10 +273,19 @@ main section {
     justify-content: center;
 }
 
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
 iframe {
     width: 100%;
     height: 100%;
 }
+
 
 #upcoming {
     display: grid;
@@ -91,26 +295,37 @@ iframe {
     align-items: center;
 }
 
+
 #upcoming .up {
     grid-column: 3;
 }
+
 
 #upcoming .down {
     grid-column: 3;
 }
 
+
 #contact .up {
     grid-column: 3;
 }
+
 
 #contact .down {
     grid-column: 3;
 }
 
+
+#previous .container .item {
+    width: 100%;
+}
+
+
 #upcoming .container .item {
     grid-column: 2;
     grid-row: 2;
 }
+
 
 #contact .container .item {
     grid-column: 2;
@@ -118,21 +333,27 @@ iframe {
     height: 100%;
 }
 
-.item:hover {
-    height: 120%;
+
+#work .container .item:hover {
+    height: 110%;
+    width: 110%;
 }
 
+
 #contact .container .item:hover {
-    height: 120%;
+    letter-spacing: .1em;
 }
+
 
 #work .up {
     grid-column: 3;
 }
 
+
 #work .down {
     grid-column: 3;
 }
+
 
 #work {
     display: grid;
@@ -142,11 +363,13 @@ iframe {
     align-items: center;
 }
 
+
 #spinshare {
     background-image: url("spinshare.d69c50d4.jpg");
     background-size: cover;
     background-position: center;
 }
+
 
 #project1 {
     background-image: url("project1.f145a282.png");
@@ -154,11 +377,13 @@ iframe {
     background-position: center;
 }
 
+
 #scrumboomer {
     background-image: url("ScrumBoomer.0255d5c0.png");
     background-size: cover;
     background-position: center;
 }
+
 
 #mapbot {
     background-image: url("mapbot.f8403e67.png");
@@ -166,11 +391,13 @@ iframe {
     background-position: center;
 }
 
+
 #sssospinpanel {
     background-image: url("sssopanel.9fc71b5b.jpg");
     background-size: cover;
     background-position: center;
 }
+
 
 #obsguide {
     background-image: url("obsguide.93079341.png");
@@ -178,11 +405,13 @@ iframe {
     background-position: center;
 }
 
+
 #fuckyoutoo {
     background-image: url("fuckyoutoo.c69a2740.jpg");
     background-size: cover;
     background-position: center;
 }
+
 
 #playmore {
     background-image: url("playmore.310000df.png");
@@ -190,11 +419,13 @@ iframe {
     background-position: center;
 }
 
+
 #barelyvisible {
     background-image: url("barelyvisible.ceda5a00.png");
     background-size: cover;
     background-position: center;
 }
+
 
 #itemtext {
     height: 1.5em;
@@ -202,11 +433,13 @@ iframe {
     text-align: center;
 }
 
+
 #placeholder {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
+
 
 #contact {
     display: grid;
@@ -216,22 +449,38 @@ iframe {
     align-items: center;
 }
 
+
 #contact .container {
     text-align: center;
 }
+
 
 a {
     text-decoration: none;
     color: white;
 }
 
+
 ul {
     color: white;
 }
 
+
 em {
     color: white;
 }
+
+
+.email {
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.email:hover {
+    letter-spacing: .1em;
+}
+
 
 #logo {
     width: 100%;
@@ -239,15 +488,18 @@ em {
     grid-row: 2;
 }
 
+
 #landing .up {
     grid-column: 2;
     grid-row: 1;
 }
 
+
 #landing .down {
     grid-column: 2;
     grid-row: 3;
 }
+
 
 .item {
     background-color: rgba(0, 0, 0, 0.356);
@@ -269,6 +521,7 @@ em {
         "Helvetica Neue",
         sans-serif;
     font-style: italic;
-    color: #fff
+    color: #fff;
+    transition: all 0.1s ease-in-out;
 }
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
