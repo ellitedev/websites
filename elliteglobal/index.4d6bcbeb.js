@@ -527,13 +527,20 @@ var _albumObjDefault = parcelHelpers.interopDefault(_albumObj);
 var _fileObj = require("url:./file.obj");
 var _fileObjDefault = parcelHelpers.interopDefault(_fileObj);
 const scene = new _three.Scene();
-const camera = new _three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 50);
+const camera = new _three.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.01, 900);
 var myObj;
 const objloader = new _objloaderJs.OBJLoader();
 objloader.load(_albumObjDefault.default, function(object) {
     myObj = object;
     object.traverse(function(child) {
-        if (child instanceof _three.Mesh) child.material.wireframe = true;
+        if (child.isMesh) {
+            var wireframeGeomtry = new _three.WireframeGeometry(child.geometry);
+            var wireframeMaterial = new _three.LineBasicMaterial({
+                color: 4342338
+            });
+            var wireframe = new _three.LineSegments(wireframeGeomtry, wireframeMaterial);
+            child.add(wireframe);
+        }
     });
     scene.add(object);
     object.position.set(0, 0, -60);
@@ -543,15 +550,19 @@ var floppyObj;
 objloader.load(_fileObjDefault.default, function(object) {
     floppyObj = object;
     object.traverse(function(child) {
-        if (child instanceof _three.Mesh) child.material.wireframe = true;
+        if (child.isMesh) {
+            var wireframeGeomtry = new _three.WireframeGeometry(child.geometry);
+            var wireframeMaterial = new _three.LineBasicMaterial({
+                color: 4342338
+            });
+            var wireframe = new _three.LineSegments(wireframeGeomtry, wireframeMaterial);
+            child.add(wireframe);
+        }
     });
     scene.add(object);
     object.position.set(0, 0, -110);
     object.scale.set(0, 0, 0);
 });
-const light = new _three.DirectionalLight(16777215, 1);
-light.position.set(2, 2, 5);
-scene.add(light);
 const renderer = new _three.WebGLRenderer({
     canvas: document.querySelector('#bg')
 });
@@ -569,9 +580,9 @@ scene.add(sphere);
 function moveCamera(e) {
     const t = document.body.getBoundingClientRect().top;
     camera.position.z = t * 0.025;
-    floppyObj.scale.x = t * 0.00005;
-    floppyObj.scale.y = t * 0.00005;
-    floppyObj.scale.z = t * 0.00005;
+    floppyObj.scale.x = t * 0.00002;
+    floppyObj.scale.y = t * 0.00002;
+    floppyObj.scale.z = t * 0.00002;
     myObj.scale.x = t * 0.0025;
     myObj.scale.y = t * 0.0025;
     myObj.scale.z = t * 0.0025;
@@ -589,10 +600,10 @@ function animate() {
     requestAnimationFrame(animate);
     sphere.rotation.x += 0.005;
     sphere.rotation.y += 0.005;
-    floppyObj.rotation.x += 0.005;
-    floppyObj.rotation.y += 0.005;
-    myObj.rotation.x += 0.005;
-    myObj.rotation.y += 0.005;
+    floppyObj.rotation.x -= 0.0052;
+    floppyObj.rotation.y -= 0.0052;
+    myObj.rotation.x += 0.0055;
+    myObj.rotation.y += 0.0055;
     renderer.render(scene, camera);
 }
 animate();
