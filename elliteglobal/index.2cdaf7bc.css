@@ -244,13 +244,13 @@ div.item {
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-image: url("KYUUB422.1b865f01.png");
+    background-image: url("OTB_Poster_A2.8d5817ed.png");
 
 }
 
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-image: url("OTB_Poster_A2.8d5817ed.png");
+    background-image: url();
 }
 
 input:nth-of-type(1) {
